@@ -1,28 +1,39 @@
-# AWS CDK Sample
+# AWS CDK Sample ApplicationLoadBalancedFargateService
 
 ## :rocket: Quick Start
 
-**1. Install dependencies with Yarn v1**
+**1. Install CDK globaly using NPM**
 
 ```shell
-yarn install
+npm install -g aws-cdk
 ```
 
 **2. Create the [bootstrap stack](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html) in your AWS account**
 _This only needs to be ran once per account/region._
 
 ```shell
-yarn bootstrap
+cdk bootstrap
 ```
 
 **3. Build Cloudformation files**
 
 ```shell
-yarn build
+cdk synth
 ```
 
 **4. Deploy**
 
 ```shell
-yarn deploy --all
+cdk deploy
 ```
+
+## Useful commands
+
+| Command       | Definition                                            |
+| ------------- | ----------------------------------------------------- |
+| `mvn package` | Compile and run tests.                                |
+| `cdk ls`      | List all stacks in the app.                           |
+| `cdk synth`   | Emits the synthesized CloudFormation template.        |
+| `cdk deploy`  | Deploy this stack to your default AWS account/region. |
+| `cdk diff`    | Compare deployed stack with current state.            |
+| `cdk docs`    | Open CDK documentation.                               |
